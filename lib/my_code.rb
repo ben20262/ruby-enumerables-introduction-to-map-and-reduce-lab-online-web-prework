@@ -33,6 +33,7 @@ def reduce_to_total(array, start = 0)
     total += array[start]
     start += 1
   end
+  total
 end
 
 def reduce_to_all_true(array)
