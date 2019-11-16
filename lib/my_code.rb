@@ -38,12 +38,16 @@ def reduce_to_all_true(array)
   array.each do |value|
     if value == false
       return false
-    else
-      return true
     end
   end
+  true
 end
 
 def reduce_to_any_true(array)
-
+  array.each do |value|
+    if value == true
+      return true
+    end
+  end
+  false
 end
