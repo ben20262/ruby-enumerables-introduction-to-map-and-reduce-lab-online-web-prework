@@ -28,7 +28,6 @@ end
 
 
 def reduce_to_total(array, start = 0)
-
   array.each do |num|
     start += num
   end
