@@ -1,7 +1,9 @@
 def map_to_negativize(array)
+  brray = []
   array.each do |num|
-
+    brray << -num
   end
+  brray
 end
 
 def map_to_no_change(array)
