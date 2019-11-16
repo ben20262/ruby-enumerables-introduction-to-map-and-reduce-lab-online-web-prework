@@ -35,7 +35,13 @@ def reduce_to_total(array, start = 0)
 end
 
 def reduce_to_all_true(array)
-  !!array
+  array.each do |value|
+    if value == false
+      return false
+    else
+      return true
+    end
+  end
 end
 
 def reduce_to_any_true(array)
