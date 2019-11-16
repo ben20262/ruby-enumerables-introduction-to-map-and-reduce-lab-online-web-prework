@@ -11,13 +11,27 @@ def map_to_no_change(array)
 end
 
 def map_to_double(array)
+  brray = []
+  array.each do |num|
+    brray << num * 2
+  end
+  brray
 end
 
 def map_to_square(array)
+  brray = []
+  array.each do |num|
+    brray << num ** 2
+  end
+  brray
 end
 
 
 def reduce_to_total(array, start = 0)
+  total = 0
+  while start < array.length
+    total += array[start]
+  end
 end
 
 def reduce_to_all_true(array)
